@@ -110,6 +110,7 @@ export default function Home() {
           <div className="flex gap-8 items-center">
             <a href="#home" className="text-sm hover:text-accent transition">Home</a>
             <a href="#projects" className="text-sm hover:text-accent transition">Projects</a>
+            <a href="#resume" className="text-sm hover:text-accent transition">Resume</a>
             <a href="#skills" className="text-sm hover:text-accent transition">Skills</a>
             <a href="#contact" className="text-sm hover:text-accent transition">Contact</a>
           </div>
@@ -233,6 +234,47 @@ export default function Home() {
                   <span key={skill} className="px-3 py-1 rounded bg-accent/10 text-accent">{skill}</span>
                 ))}
               </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Resume Section */}
+        <section id="resume" className="mb-20">
+          <h2 className="text-2xl font-bold mb-6">~ Resume ~</h2>
+          <div className="border border-border/80 rounded-2xl bg-background/60 shadow-sm backdrop-blur-sm p-6 md:p-8 flex flex-col md:flex-row gap-6 md:gap-8 items-start md:items-center">
+            <div className="flex-1 space-y-3">
+              <p className="text-xs font-mono uppercase tracking-[0.25em] text-accent/80">
+                resume.pdf
+              </p>
+              <h3 className="text-xl font-semibold">Senior Frontend Engineer · 5+ years</h3>
+              <p className="text-sm text-muted-foreground">
+                A concise one-pager with my experience, tech stack, and impact across banking, ed-tech and product startups.
+              </p>
+              <ul className="text-sm text-muted-foreground list-disc list-inside space-y-1">
+                <li>Lead frontend engineer across Natwest, SchoolMind, and AI-first products.</li>
+                <li>Deep experience in React, TypeScript, Micro-Frontends, and CI/CD.</li>
+                <li>Focused on performance, design systems, and engineering leadership.</li>
+              </ul>
+            </div>
+
+            <div className="w-full md:w-auto flex flex-col sm:flex-row md:flex-col gap-3">
+              <a
+                href="/resume.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center gap-2 rounded-lg border border-accent bg-accent/10 px-4 py-2 text-sm font-medium text-accent hover:bg-accent/20 transition w-full md:w-auto"
+              >
+                <Code2 size={16} />
+                <span>View Resume</span>
+              </a>
+              <a
+                href="/resume.pdf"
+                download
+                className="inline-flex items-center justify-center gap-2 rounded-lg border border-border px-4 py-2 text-sm font-medium text-foreground hover:border-accent/60 hover:bg-accent/5 transition w-full md:w-auto"
+              >
+                <ExternalLink size={16} />
+                <span>Download PDF</span>
+              </a>
             </div>
           </div>
         </section>
