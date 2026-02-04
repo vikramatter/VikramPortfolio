@@ -23,6 +23,15 @@ const projects = [
   },
   {
     id: 3,
+    title: "DevKini Associates Portfolio",
+    description: "Company portfolio website for DevKini Associates showcasing services, work, and brand presence for business In New York.",
+    tech: ["React.js", "TypeScript", "Vite", "Mailchimp", "Figma"],
+    impact: "Launched a modern portfolio presence for DevKini Associates",
+    github: "https://github.com/vikramatter/devmkini-portfolio",
+    live: "https://www.devmkini.com/"
+  },
+  {
+    id: 4,
     title: "Pollinate Arts NFT Platform",
     description: "React Native app integrating Google Maps & Ethereum blockchain for NFT art marketplace for a US based Client.",
     tech: ["React Native", "Google Maps", "Ethereum", "Blockchain"],
@@ -31,7 +40,7 @@ const projects = [
     live: "https://www.pollinate.co/"
   },
   {
-    id: 4,
+    id: 5,
     title: "Ai-Job-Interviewer",
     description: "Ai-Job-Interviewer is a platform that allows you to interview candidates for a job.",
     tech: ["React.js", "TypeScript", "Design Systems"],
@@ -40,7 +49,7 @@ const projects = [
     live: "https://ai-interview-india-jobs.vercel.app/"
   },
   {
-    id: 5,
+    id: 6,
     title: "CI/CD Pipeline Automation",
     description: "Implemented GitHub Actions and Jenkins pipelines for automated deployment and reduced manual interventions using SonarQube and Teamcity.",
     tech: ["GitHub Actions", "Jenkins", "CI/CD"],
@@ -49,7 +58,7 @@ const projects = [
     live: ""
   },
   {
-    id: 6,
+    id: 7,
     title: "SchoolMind",
     description: "SchoolMind is a platform that allows you to manage your school's data for student,teacher,parents and admin.",
     tech: ["React.js", "TypeScript", "Node.js", "MongoDB", "Express.js", "Langchain", "Python", "CI/CD"],
@@ -58,7 +67,7 @@ const projects = [
     live: "https://www.schoolmind.co/"
   },
   {
-    id: 7,
+    id: 8,
     title: "Resource Fashion",
     description: "E-commerce platform  that allows you to get latest brand Wearables and Accessories",
     tech: ["React.js", "TypeScript", "Node.js", "MongoDB", "Express.js"],
@@ -140,7 +149,7 @@ export default function Home() {
               </p>
             </div>
 
-            <div className="w-48 h-48 rounded-full overflow-hidden flex-shrink-0 border-2 border-accent/20">
+            <div className="hidden md:block w-48 h-48 rounded-full overflow-hidden flex-shrink-0 border-2 border-accent/20">
               <img
                 src={avatarImage}
                 alt="Bawa Vikram"
